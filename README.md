@@ -1,7 +1,7 @@
 ## Chrome Extension For MercadoLibre's Plaform
-##### Simple extension for the MercadoLibre platform that shows useful information to the buyer. Using MercadoLivre's API the extension requests the product data and transforms it into useful information for the user, such as showing the total purchase calculating the value of the (product + shipping).
+#### Simple extension for the MercadoLibre platform that shows useful information to the buyer. Using MercadoLivre's API the extension requests the product data and transforms it into useful information for the user, such as showing the total purchase calculating the value of the (product + shipping).
 
-##### This extension can be very useful to compare products quickly.
+#### This extension can be very useful to compare products quickly.
 
 ## Features
 - Calculate the total cost with shipping cost
