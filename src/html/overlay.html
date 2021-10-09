@@ -1,0 +1,102 @@
+<!-- Overlay form -->
+
+<div class="mlpc_container">
+    <div class="mlpc_content--block">
+        <ul class="mlpc_header mlpc_content--block">
+            <li>{{item_condition}}</li>
+            <li>{{available_quantity}}</li>
+            {{free_shipping}}
+            {{warranty}}
+        </ul>
+        <div class="mlpc_main mlpc_padding--10-0 mlpc_content--block">
+            <h2>Total c/ frete: <span class="mlpc_fontweight--bold">{{full_total}}</span></h2>
+            <h3>{{creditcard_total}}</h3>
+        </div>
+        <a href="javascript:void(0)" class="mlpc_fontweight--bold" id="mlpc_details_button">Detalhes</a>
+        <div class="mlpc_details mlpc_padding--10-0 mlpc_content--block" id="mlpc_details_block">
+            <h3>{{seller_city}}, {{seller_state}}</h3>
+            <h3>Entrega até {{shipping_date}}</h3>
+        </div>
+    </div>
+</div>
+
+<!-- Overlay style -->
+<style>
+    .mlpc_container {
+        width: 16%;
+        height: auto;
+        min-height: 100px;
+        position: fixed;
+        bottom: 15px;
+        right: 15px;
+        background: #FFFFFF;
+        border-radius: 5px;
+        box-shadow: 0px 0 10px rgb(0 0 0 / 10%);
+        z-index: 5555555;
+        padding: 20px 15px;
+        border: 1px solid #c9c9c9;
+        animation: SlideInFadeIn 0.3s ease-in-out;
+    }
+
+    @keyframes SlideInFadeIn {
+        0% {
+            transform: translateY(200px);
+            opacity: 0;
+        }
+        100% {
+            transform: translateY(0px);
+            opacity: 1;
+        }
+    }
+
+    .mlpc_content--block {
+        width: 100%;
+        height: auto;
+        display: block;
+    }
+
+    .mlpc_header {
+        padding: 0;
+        margin: 0;
+        list-style-type: none;
+        letter-spacing: 0.19px;
+    }
+
+    .mlpc_header li {
+        display: inline-block;
+        color: #737373;
+    }
+
+    .mlpc_header li.mplc_fs_badge {
+        display: inline-block;
+        background: #00a650;
+        padding: 0px 7px;
+        border-radius: 5px;
+        color: #FFFFFF;
+    }
+
+    .bg--red {
+        background: #f44336 !important;
+    }
+
+    .mlpc_header li:not(.mplc_fs_badge):after {
+        content: "|";
+        padding: 0 5px;
+    }
+
+    .mlpc_padding--10-0 {
+        padding: 10px 0;
+    }
+
+    .mlpc_fontweight--bold {
+        font-weight: 600;
+    }
+
+    .mlpc_container h2, h3 {
+        line-height: 1.6em;
+    }
+
+    .mlpc_details {
+        display: none;
+    }
+</style>>

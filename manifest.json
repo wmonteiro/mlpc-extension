@@ -1,0 +1,25 @@
+{
+    "manifest_version": 2,
+    "name": "MercadoLibre Price & Shipping Calculator",
+    "version": "0.0.4",
+    "description": "Chrome Extension for MercadoLibre Platform",
+    "author": "wmonteiro",
+    "background": {
+        "page": "src/html/background.html"
+    },
+    "content_scripts": [
+      {
+		"matches": [
+      "*://*.produto.mercadolivre.com.br/*"
+    ],
+      "js": ["src/js/content_script.js"]
+      }
+    ],
+    "permissions": [
+      "tabs"
+    ],
+    "web_accessible_resources": [
+      "src/js/*",
+      "src/html/*"
+    ]
+}
